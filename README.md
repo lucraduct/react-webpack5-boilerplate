@@ -1,4 +1,4 @@
-Lucraduct React + Webpack 5 Boilerplate
+React + Webpack 5 Boilerplate
 ===
 
 Lucraduct - Developed by Paravada Naveen Teja
