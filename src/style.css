@@ -1,0 +1,55 @@
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body,
+html {
+  height: 100%;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+body {
+  background: #283351;
+  color: #fff;
+}
+
+/* Position text in the top-left corner */
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 16px;
+}
+.logo img {
+  width: 200px;
+}
+
+/* Position text in the bottom-left corner */
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+/* Position text in the middle */
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the <hr> element */
+hr {
+  margin: auto;
+  width: 40%;
+}
+
+a {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  cursor: pointer;
+  color: #39c6f4;
+}
+
+.posts-header{
+  margin-top: 100px;
+}

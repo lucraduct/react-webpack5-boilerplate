@@ -1,16 +1,16 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CssNano = require('cssnano');
-const { merge } = require('webpack-merge');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const { resolve } = require('path');
-const Dotenv = require('dotenv-webpack');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssNano = require("cssnano");
+const { merge } = require("webpack-merge");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const { resolve } = require("path");
+const Dotenv = require("dotenv-webpack");
 
-const config = require('./webpack.config.js');
+const config = require("./webpack.config.js");
 
 module.exports = merge(config, {
   output: {
-    path: resolve(__dirname, 'dist'),
-    filename: 'assets/js/[name].[contenthash].js',
+    path: resolve(__dirname, "dist"),
+    filename: "assets/js/[name].[contenthash].js",
     chunkFilename: `assets/js/[contenthash].js`,
   },
 
@@ -24,18 +24,18 @@ module.exports = merge(config, {
             options: {},
           },
           {
-            loader: 'css-loader',
+            loader: "css-loader",
             options: {
               importLoaders: 1,
             },
           },
           {
-            loader: 'postcss-loader',
+            loader: "postcss-loader",
             options: {
               postcssOptions: {
                 plugins: [
                   CssNano({
-                    preset: 'default',
+                    preset: "default",
                   }),
                 ],
               },
@@ -46,18 +46,18 @@ module.exports = merge(config, {
 
       {
         test: /\.(woff2?|ttf|eot)(\?-.*)?$/,
-        loader: 'file-loader',
+        loader: "file-loader",
         options: {
-          name: 'assets/fonts/[contenthash].[ext]',
+          name: "assets/fonts/[contenthash].[ext]",
           esModule: false,
         },
       },
 
       {
         test: /\.(png|jpe?g|ico|gif)(\?-.*)?$/,
-        loader: 'file-loader',
+        loader: "url-loader",
         options: {
-          name: 'assets/img/[contenthash].[ext]',
+          name: "assets/img/[contenthash].[ext]",
           esModule: false,
         },
       },
@@ -66,21 +66,21 @@ module.exports = merge(config, {
 
   plugins: [
     new CleanWebpackPlugin(),
-    new Dotenv({ path: './.env', safe: true }),
+    new Dotenv(),
     new MiniCssExtractPlugin({
-      filename: 'assets/css/[name].[contenthash].css',
-      chunkFilename: 'assets/css/[id].[contenthash].css',
+      filename: "assets/css/[name].[contenthash].css",
+      chunkFilename: "assets/css/[id].[contenthash].css",
     }),
   ],
 
   optimization: {
-    chunkIds: 'named',
+    chunkIds: "named",
     splitChunks: {
       cacheGroups: {
         vendor: {
           test: /node_modules/,
-          chunks: 'initial',
-          name: 'vendor',
+          chunks: "initial",
+          name: "vendor",
           priority: 10,
           enforce: true,
         },
