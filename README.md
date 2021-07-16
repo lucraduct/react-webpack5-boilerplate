@@ -8,11 +8,13 @@ A great start made for Developers and commercial companies. A big vision with ot
 ### Features
 - [x] Redux
 - [x] React Suspense
+- [x] Daemon script
+- [x] Connected React Routing
 - [x] Easy Routing and built In Lazy Loading routes
 - [x] New React 17 
 - [x] Import `svg`, `png` as React Components  
 - [x] Axios PreDefined
-- [x] History Store
+- [x] Built-IN History and Store
 - [x] Redux Dev Tool Configured
 - [x] Webpack 5 pre Configured 
 - [x] Easy to Adapt
