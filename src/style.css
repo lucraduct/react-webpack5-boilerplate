@@ -16,6 +16,7 @@ body {
   position: absolute;
   top: 10px;
   left: 16px;
+  cursor: pointer;
 }
 .logo img {
   width: 200px;
@@ -50,6 +51,6 @@ a {
   color: #39c6f4;
 }
 
-.posts-header{
+.posts-header {
   margin-top: 100px;
 }

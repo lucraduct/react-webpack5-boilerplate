@@ -1,22 +1,22 @@
-import { lazy } from 'react';
+import { lazy } from "react";
 
 const routePaths = [
   {
-    title: 'Home',
-    path: '/',
-    component: lazy(() => import('@/containers/Home/Home.jsx')),
+    title: "Home",
+    path: "/",
+    component: lazy(() => import("@/containers/Home/Home.jsx")),
     exact: true,
   },
   {
-    path: '/posts',
+    path: "/posts",
     exact: true,
-    title: 'Posts',
-    component: lazy(() => import('@/containers/Posts')),
+    title: "Posts",
+    component: lazy(() => import("@/containers/Posts")),
   },
   {
-    title: 'id',
-    path: '/home/:id',
-    component: lazy(() => import('@/containers/Home/Home.jsx')),
+    title: "id",
+    path: "/home/:id",
+    component: lazy(() => import("@/containers/Home/Home.jsx")),
     exact: true,
   },
 ];

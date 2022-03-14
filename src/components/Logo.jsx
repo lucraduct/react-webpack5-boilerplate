@@ -1,9 +1,18 @@
-import mainLogo from "@/assets/img/logo/lucraduct-logo.png"
+import mainLogo from "@/assets/img/logo/lucraduct-logo.png";
+import { useHistory } from "react-router-dom";
 
-const Logo = () => (
-  <div class="logo">
-      <p><img src={mainLogo} /></p>
+function Logo() {
+  const history = useHistory();
+  function onClick() {
+    return history.push("/");
+  }
+  return (
+    <div class="logo" onClick={onClick}>
+      <p>
+        <img src={mainLogo} />
+      </p>
     </div>
-);
+  );
+}
 
 export default Logo;

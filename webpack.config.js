@@ -1,24 +1,24 @@
-const HtmlPlugin = require('html-webpack-plugin');
-const { resolve } = require('path');
-const context = resolve(__dirname, 'src');
+const HtmlPlugin = require("html-webpack-plugin");
+const { resolve } = require("path");
+const context = resolve(__dirname, "src");
 
 module.exports = {
   output: {
-    publicPath: '/',
+    publicPath: "/",
   },
-  devtool: 'source-map',
+  devtool: "source-map",
   module: {
     rules: [
       {
         test: /\.jsx?$/,
-        loader: 'babel-loader',
+        loader: "babel-loader",
         include: context,
         options: {
           presets: [
             [
-              '@babel/preset-react',
+              "@babel/preset-react",
               {
-                runtime: 'automatic',
+                runtime: "automatic",
               },
             ],
           ],
@@ -27,22 +27,22 @@ module.exports = {
 
       {
         test: /\.svg$/,
-        loader: '@svgr/webpack',
+        loader: "@svgr/webpack",
       },
     ],
   },
 
   resolve: {
-    extensions: ['.js', '.jsx', '.json'],
+    extensions: [".js", ".jsx", ".json"],
     alias: {
-      '@': resolve(__dirname, 'src'),
+      "@": resolve(__dirname, "src"),
     },
   },
 
   plugins: [
     new HtmlPlugin({
-      title: 'LucraDuct React Webpack 5 Boilerplate',
-      favicon: './src/assets/img/logo/favicon.png',
+      title: "LucraDuct - Developers Point",
+      favicon: "./src/assets/img/logo/favicon.png",
     }),
   ],
 };

@@ -1,19 +1,29 @@
-import Logo from "@/components/Logo.jsx"
+import Logo from "@/components/Logo.jsx";
 
-const Home = () => {
+function Home() {
   return (
-  <>
-  <Logo />
-    <div class="middle">
-      <h1>React Webpack 5 Boilerplate</h1>
-      <hr/>
-      <p>Developed By <a href="http://www.pnaveenteja.com">Paravada Naveen Teja</a></p>
-    </div>
-    <div class="bottomleft">
-      <p>Powered By <a href="http://www.lucraduct.com">Lucraduct</a></p>
-    </div>
-  </>
+    <>
+      <Logo />
+      <div class="middle">
+        <h1>There is nothing impossible to they who will try.</h1>
+        <hr />
+        <p>
+          Developed By{" "}
+          <a href="http://www.pnaveenteja.com" target="_blank">
+            Paravada Naveen Teja
+          </a>
+        </p>
+      </div>
+      <div class="bottomleft">
+        <p>
+          Powered By{" "}
+          <a href="http://www.lucraduct.com" target="_blank">
+            Lucraduct
+          </a>
+        </p>
+      </div>
+    </>
   );
-};
+}
 
 export default Home;

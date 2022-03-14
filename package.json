@@ -1,11 +1,12 @@
 {
-  "name": "@lucraduct/react-webpack5-boilerplate",
-  "version": "0.0.1",
+  "name": "@lucraduct/react-boilerplate",
+  "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://lucraduct.com/",
   "author": {
     "name": "Paravada Naveen Teja",
     "email": "dora.naveen@gmail.com",
-    "url": "https://www.paravadanaveenteja.com"
+    "url": "https://www.pnaveenteja.com/"
   },
   "license": "Unlicense",
   "scripts": {
