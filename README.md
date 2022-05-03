@@ -1,32 +1,32 @@
-React + Webpack 5 Boilerplate
-===
+# React + Webpack 5 Boilerplate
 
 Lucraduct - Developed by Paravada Naveen Teja
 
-A great start made for Developers and commercial companies. A big vision with otimisied and simple ready to use. Attention to detail with optimistic solution provided. 
+A great start made for Developers and commercial companies. A big vision with otimisied and simple ready to use. Attention to detail with optimistic solution provided.
 
 ### Features
+
 - [x] Redux
 - [x] React Suspense
 - [x] Daemon script
 - [x] Connected React Routing
 - [x] Easy Routing and built In Lazy Loading routes
-- [x] New React 17 
-- [x] Import `svg`, `png` as React Components  
+- [x] New React 17
+- [x] Import `svg`, `png` as React Components
 - [x] Axios PreDefined
 - [x] Built-IN History and Store
 - [x] Redux Dev Tool Configured
-- [x] Webpack 5 pre Configured 
+- [x] Webpack 5 pre Configured
 - [x] Easy to Adapt
 - [x] Easy to Re-Architecture
 - [x] Easy to Config Third Party Libraries
-- [x] Easy to Code   
+- [x] Easy to Code
 - [x] Centralised EcoSystem
 
 ### Install
 
 ```$shell
-$ git clone 
+$ git clone
 $ npm install
 ```
 
@@ -52,4 +52,10 @@ $ npm start
 
 Default port is 5000 (or first available port). You can pass `-l`.
 
+### JSDOC; Better-docs
 
+```$shell
+$ npm run docs
+```
+
+Static files saved in docs folder

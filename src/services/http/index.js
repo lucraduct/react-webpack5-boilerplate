@@ -1,6 +1,6 @@
-import * as axios from 'axios';
-import PropTypes from 'prop-types';
-import { portConstant } from './httpConfig';
+import * as axios from "axios";
+import PropTypes from "prop-types";
+import { portConstant } from "./httpConfig";
 // import forceLogout from '../../helpers/forceLogout';
 
 /**
@@ -8,8 +8,8 @@ import { portConstant } from './httpConfig';
  */
 axios.defaults.baseURL = portConstant;
 // axios.defaults.headers.common["Authorization"] = authorizationCookie;
-axios.defaults.headers.post['Content-Type'] =
-  'application/x-www-form-urlencoded';
+axios.defaults.headers.post["Content-Type"] =
+  "application/x-www-form-urlencoded";
 
 /**
  * @description Make an backend request using Axios
@@ -17,7 +17,7 @@ axios.defaults.headers.post['Content-Type'] =
  * @property {("get" | "post" | "put" | "delete" | "request" | "head" | "options" | "patch")} method
  * @property {String} url
  *
- * @param {httpReq}  config
+ * @param {httpReq} config
  */
 
 async function httpReq(config) {

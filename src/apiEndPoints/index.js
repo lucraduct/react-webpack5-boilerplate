@@ -1,6 +1,18 @@
 /**
- *  API's to be used cross application
+ * @classdesc
+ * List of API End Points
+ *
+ * @component
+ * @category Constants
+ *
+ * @constant
+ * @type {Object}
+ * @default
+ * @returns {Object} endpoints
  */
-export default {
+
+const apiEndPoints = {
   FETCH_POSTS: "/posts",
 };
+
+export default apiEndPoints;
