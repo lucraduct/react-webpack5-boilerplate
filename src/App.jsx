@@ -1,19 +1,17 @@
 import { Suspense } from "react";
-import { Switch, Route } from "react-router-dom";
-import { Router } from "react-router-dom";
-import history from "@/store/history";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import routePaths from "@/constants/routePaths";
 
 const App = () => (
-  <Router history={history}>
+  <BrowserRouter>
     <Suspense fallback={"Loading..."}>
-      <Switch>
+      <Routes>
         {routePaths.map((props, index) => (
-          <Route key={index} {...props} />
+          <Route key={`route_${index}`} {...props} />
         ))}
-      </Switch>
+      </Routes>
     </Suspense>
-  </Router>
+  </BrowserRouter>
 );
 
 export default App;

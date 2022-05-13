@@ -1,23 +1,19 @@
 import { lazy } from "react";
 
+const Home = lazy(() => import("@/containers/Home/Home.jsx"));
+const Posts = lazy(() => import("@/containers/Posts"));
 const routePaths = [
   {
     title: "Home",
     path: "/",
-    component: lazy(() => import("@/containers/Home/Home.jsx")),
+    element: <Home />,
     exact: true,
   },
   {
     path: "/posts",
     exact: true,
     title: "Posts",
-    component: lazy(() => import("@/containers/Posts")),
-  },
-  {
-    title: "id",
-    path: "/home/:id",
-    component: lazy(() => import("@/containers/Home/Home.jsx")),
-    exact: true,
+    element: <Posts />,
   },
 ];
 

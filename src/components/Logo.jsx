@@ -1,10 +1,10 @@
 import mainLogo from "@/assets/img/logo/lucraduct-logo.png";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Logo() {
-  const history = useHistory();
+  const navigate = useNavigate();
   function onClick() {
-    return history.push("/");
+    return navigate("/");
   }
   return (
     <div className="logo" onClick={onClick}>
