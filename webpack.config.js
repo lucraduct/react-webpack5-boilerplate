@@ -41,8 +41,9 @@ module.exports = {
 
   plugins: [
     new HtmlPlugin({
-      title: "LucraDuct - Developers Point",
-      favicon: "./src/assets/img/logo/favicon.png",
+      template: "./index.html",
+      // title: "LucraDuct - Developers Point",
+      // favicon: "./src/assets/img/logo/favicon.png",
     }),
   ],
 };
