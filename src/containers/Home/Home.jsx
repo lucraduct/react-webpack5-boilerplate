@@ -1,25 +1,26 @@
+import { Link } from "react-router-dom";
 import Logo from "@/components/Logo.jsx";
 
 function Home() {
   return (
     <>
       <Logo />
-      <div class="middle">
+      <div className="middle">
         <h1>There is nothing impossible to they who will try.</h1>
         <hr />
         <p>
           Developed By{" "}
-          <a href="http://www.pnaveenteja.com" target="_blank">
+          <Link to="http://www.pnaveenteja.com" target="_blank">
             Paravada Naveen Teja
-          </a>
+          </Link>
         </p>
       </div>
-      <div class="bottomleft">
+      <div className="bottomleft">
         <p>
           Powered By{" "}
-          <a href="http://www.lucraduct.com" target="_blank">
+          <Link to="http://www.lucraduct.com" target="_blank">
             Lucraduct
-          </a>
+          </Link>
         </p>
       </div>
     </>

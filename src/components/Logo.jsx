@@ -7,7 +7,7 @@ function Logo() {
     return history.push("/");
   }
   return (
-    <div class="logo" onClick={onClick}>
+    <div className="logo" onClick={onClick}>
       <p>
         <img src={mainLogo} />
       </p>

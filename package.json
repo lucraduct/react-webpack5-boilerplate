@@ -13,7 +13,8 @@
     "start": "serve dist -s",
     "dev": "webpack serve --mode development --config webpack.config.development.js --inline --hot --history-api-fallback --progress",
     "build": "webpack --mode production --config webpack.config.production.js",
-    "docs": "jsdoc -c jsdoc.json"
+    "docs": "jsdoc -c jsdoc.json",
+    "lint": "eslint ./src --ext .jsx,.js"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
@@ -27,6 +28,8 @@
     "css-loader": "^5.0.0",
     "cssnano": "^4.1.10",
     "dotenv-webpack": "^6.0.0",
+    "eslint": "^8.15.0",
+    "eslint-plugin-react": "^7.29.4",
     "html-webpack-plugin": "^4.5.0",
     "jsdoc": "^3.6.10",
     "mini-css-extract-plugin": "^1.2.1",
@@ -41,7 +44,6 @@
   },
   "dependencies": {
     "axios": "^0.21.0",
-    "connected-react-router": "^6.9.1",
     "history": "^4.10.1",
     "immer": "^9.0.2",
     "react": "^17.0.1",
